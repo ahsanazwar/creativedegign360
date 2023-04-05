@@ -1,0 +1,56 @@
+
+.why-section{
+    padding: em(30) 0 em(50);
+    h3{
+        color: $text3;
+    }
+    .why-box{
+        box-shadow: 0 0 em(9) em(1) rgba(0,0,0,.11);
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: em(20) em(25);
+        height: 100%;
+        h5{
+            color: $primary;
+            line-height: em(22);
+        }
+    }
+    .why-box-icon{
+        width: em(94);
+        height: em(94);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include borderRadius(50%);
+        margin: em(20) auto;
+        &.orange-icon{
+            background: #f9c785;
+        }
+        &.green-icon{
+            background: #b2daaa;
+        }
+        &.blue-icon{
+            background: #bfdfe3;
+        }
+        // &:before{
+        //     content: "";
+        //     height: em(70);
+        //     left: 60.5%;
+        //     position: absolute;
+        //     top: 10%;
+        //     width: em(408);
+        //     background-repeat: no-repeat;
+        //     background-size: cover;
+        // }
+        // &.dot-line1{
+        //     &:before{
+        //         background-image: url(../public/dotted-lines-1.webp);
+        //     }
+        // }
+        // &.dot-line2{
+        //     &:before{
+        //         background-image: url(../public/dotted-lines-2.webp);
+        //     }
+        // }
+    }
+}

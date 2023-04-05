@@ -1,0 +1,58 @@
+.main-banner-section{
+    background-image: url("../public/bg1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: em(100) 0;
+    position: relative;
+    line-height: 5;
+    &:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        z-index: 0;
+    }
+    h2,h4{
+        color: $white;
+        line-height: em(25);
+    }
+    .main-banner-content{
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+// Laptops large devices (desktops, 1600px and up)
+@media (min-width: 1600px) and (max-width: 1699.98px) { }
+
+// Laptops large devices (desktops, 1400px and up)
+@media (min-width: 1400px) and (max-width: 1599.98px) {}
+
+// Laptops small devices (desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { }
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+ }

@@ -1,0 +1,26 @@
+.services-section{
+    padding: em(100) 0 em(30);
+    h3{
+        span{
+            color: $secondary;
+        }
+    }
+}
+
+.services-box-items{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    li{
+        box-shadow: 0 0.625rem 1.25rem rgba(0,0,0,.1);
+        margin-bottom: em(50);
+        padding: em(25);
+        width: 45%;
+    }
+    p{
+        margin: 0;
+        font-weight: 700;
+    }
+}

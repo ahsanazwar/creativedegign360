@@ -1,0 +1,169 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+/* -------Start Of Website Color Branding-------- */
+
+$primary: #0E6E92;
+$secondary: #10A048;
+$success: #FC8903;
+$info: #0c5d7c;
+
+$bgGrey: #F7F8FC;
+$bgOffwhite: #FEFCFB;
+
+$darkBlue: #243453;
+
+$white: #ffffff;
+$black: #000000;
+$text1: #222222;
+$text2: #444444;
+$text3: #666666;
+
+$grey: #333333;
+$lightGrey : #8b8b8b;
+$brownbg: #f2f0e9;
+$backSecondary: #f4f3ed;
+$inputBg: #E2E2E2;
+$errorField: #ed0c0c;
+
+/* -------End Of Website Color Branding-------- */
+
+/* -------begin customization-------- */
+$body-bg: $bgOffwhite;
+$body-color: $text3;
+$theme-colors: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(
+                (
+                        "primary": $primary,
+                        "secondary": $secondary,
+                        "success": $success,
+                        "darkBlue": $darkBlue,
+                        "white": $white,
+                        "black": $black,
+                        "grey": $grey,
+                        "lightGrey": $lightGrey,
+                        "body-bg": $body-bg
+                ),
+                $theme-colors
+);
+
+.rs-theme-light, :root {
+        --rs-btn-link-text: #{$primary};
+        --rs-btn-link-hover-text: #{$primary};
+        ---rs-bg-active: #{$primary};
+        --rs-input-focus-border: #{$primary};
+        --rs-btn-primary-bg: #{$primary};
+        --rs-state-hover-bg: #{rgba($primary,0.2)};
+        --rs-listbox-option-hover-bg: #{rgba($primary,0.2)};
+        --rs-listbox-option-hover-text: #{$primary};
+        --rs-bg-active: #{$primary};
+        --rs-calendar-range-bg: #{rgba($primary,0.2)};
+        --rs-btn-primary-hover-bg: #{$black};
+}
+
+$font-family-base: 'poppins', sans-serif;
+$headings-font-family: 'poppins-bold', sans-serif;
+$headings-color: $text1;
+
+$slick-font-path: "/assets/fonts/";
+$slick-loader-path: "/assets/images/";
+
+$h1-font-size: em(60);
+$h2-font-size: em(42);
+$h3-font-size: em(38);
+$h4-font-size: em(32);
+$h5-font-size: em(24);
+$h6-font-size: em(18);
+
+
+$para-font-size: em(16);
+$para-font-size2: em(18);
+$para-font-size3: em(20);
+
+
+$headings-margin-bottom: 0px;
+
+
+$btn-border-radius: 13px;
+$input-border-radius: 13px;
+$input-border-color: #e0e0e0;
+$input-font-size: em(23);
+$input-border-width: 2px;
+$input-padding-y: 0;
+$input-padding-x: 0;
+$input-height: em(42);
+$form-group-margin-bottom: em(52);
+
+$input-placeholder-color:  rgba(#404040, .8);
+$input-plaintext-color:  rgba($white, 0.7);
+$link-hover-color: $primary;
+
+
+$btn-padding-y: 0px;
+$btn-padding-x: 0px;
+$btn-border-width: 2px;
+
+
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+$custom-checkbox-indicator-icon-checked: none;
+$custom-checkbox-indicator-icon-indeterminate: none;
+$custom-radio-indicator-icon-checked: none;
+$carousel-control-next-icon-bg: none;
+$carousel-control-prev-icon-bg: none;
+$form-feedback-icon-valid: none;
+$custom-select-indicator: none;
+$form-feedback-icon-invalid: none;
+
+
+
+$card-border-color: #dddddd;
+$card-border-radius: 0px;
+// $card-spacer-x: em(40);
+
+$breadcrumb-padding-y:      0;
+$breadcrumb-padding-x:      0;
+$breadcrumb-bg:             transparent;
+$breadcrumb-font-size:      16px;
+$breadcrumb-margin-bottom:  0;
+$breadcrumb-active-color:   #5c5c5c;
+$breadcrumb-border-radius:  0;
+$breadcrumb-item-padding:   em(45);
+$breadcrumb-divider-color:  #5c5c5c;
+$breadcrumb-divider: "\6b";
+
+
+/* -------end customization-------- */
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 767px) {
+}
+
+@import '~react-phone-input-2/lib/style.css';
+@import '~react-toastify/dist/ReactToastify.css';
+@import "~bootstrap/scss/bootstrap";
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+@import '~react-loading-skeleton/dist/skeleton.css';
+@import '~rsuite/dist/rsuite.min.css';
