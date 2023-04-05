@@ -26,7 +26,7 @@ export default function Footer() {
                             <ul>
                                 <li>
                                     <Link href="">
-                                        <a>search engine optimization</a>
+                                        <a>search engine optimization ho</a>
                                     </Link>    
                                 </li>
                                 <li>
