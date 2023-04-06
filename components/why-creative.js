@@ -18,7 +18,7 @@ export default function WhySection() {
                             </div>
                             <h5>Results-Driven Marketing Creates Long Term Partnerships</h5>
                             <p>Relationships are built on trust, and collaboration toward a common goal. Everything we do at OuterBox is driven by one
-                            goal: Delivering results to our clients. Whether it's incoming leads or eCommerce sales, your bottom line is our bottom line.</p>
+                            goal: Delivering results to our clients. Whether its incoming leads or eCommerce sales, your bottom line is our bottom line.</p>
                         </div>
                     </Col>
                 
@@ -28,7 +28,7 @@ export default function WhySection() {
                                 <Image src='/green-lightbulb.webp' alt='logo' width={34} height={53}/>
                             </div>
                             <h5>Innovation Breeds New Ideas & Cutting-Edge Tactics</h5>    
-                            <p>Online marketing, with a focus on eCommerce, is what we do. Since 2004, we've been leading the way with research, development, 
+                            <p>Online marketing, with a focus on eCommerce, is what we do. Since 2004, weve been leading the way with research, development, 
                             and implementation of sustainable strategies that drive business today, and preserve your online reputation for tomorrow.</p>
                         </div>
                     </Col>

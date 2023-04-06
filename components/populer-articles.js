@@ -36,7 +36,7 @@ export default function PopulerArtices() {
                     <Col xl={4}>
                         <div className="populer-articles-box populer-orange" style={{ backgroundImage: 'url(website-pricing.png)'}}>
                             <h4>Website Pricing Guide: How Much Should a Website Project Cost?</h4>
-                            <p>If you're looking to build a new website, you're probably wondering, "How much does a new website cost?" In this article we'll break it down!</p>
+                            <p>If youre looking to build a new website, youre probably wondering, How much does a new website cost? In this article well break it down!</p>
                         </div>
                     </Col>
                     <Col xl={4}>
@@ -49,7 +49,7 @@ export default function PopulerArtices() {
                     <Col xl={4}>
                         <div className="populer-articles-box populer-green" style={{ backgroundImage: 'url(seo-pricing-article.png)'}}>
                             <h4>SEO Pricing & Costs</h4>
-                            <p>How much should SEO cost your business? In this pricing guide we'll get into the detail of SEO pricing and why agency prices can vary greatly.</p>
+                            <p>How much should SEO cost your business? In this pricing guide well get into the detail of SEO pricing and why agency prices can vary greatly.</p>
                         </div>
                     </Col>
                     
