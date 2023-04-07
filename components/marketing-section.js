@@ -10,7 +10,7 @@ export default function MarketingSection() {
         <section className="marketing-section">
             <Container>
                 <Row>
-                <Col xl={7}>
+                <Col xl={7} md={7}>
                         <div className="marketing-content">
                             <h3>Were a Full Service Digital Marketing Company</h3>
                             <p>
@@ -24,7 +24,7 @@ export default function MarketingSection() {
                             </p>
                         </div>
                     </Col>
-                    <Col xl={5}>
+                    <Col xl={5} md={5}>
                         <Image src='/portfolio-image.webp' alt='logo' width={591} height={696}
                         />
                     </Col>

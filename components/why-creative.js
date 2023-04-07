@@ -11,7 +11,7 @@ export default function WhySection() {
                     <Col xl={12}>
                         <h3 className="text-center">Why OuterBox?</h3>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} md={4}>
                         <div className="why-box">
                             <div className="why-box-icon orange-icon dot-line1">
                                 <Image src='/orange-graph.webp' alt='logo' width={49} height={51}/>
@@ -22,7 +22,7 @@ export default function WhySection() {
                         </div>
                     </Col>
                 
-                    <Col xl={4}>
+                    <Col xl={4} md={4}>
                         <div className="why-box">
                             <div className="why-box-icon green-icon dot-line2">
                                 <Image src='/green-lightbulb.webp' alt='logo' width={34} height={53}/>
@@ -33,7 +33,7 @@ export default function WhySection() {
                         </div>
                     </Col>
                     
-                    <Col xl={4}>
+                    <Col xl={4} md={4}>
                         <div className="why-box">
                             <div className="why-box-icon blue-icon">
                                 <Image src='/blue-trophy.webp' alt='logo' width={51} height={51}/>

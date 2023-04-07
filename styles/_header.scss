@@ -27,8 +27,14 @@ header{
     .header-right-nav-content{
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         .header-right-nav-img{
             margin-right: em(35);
+        }
+        .btn{
+            &.btn-secondary{
+                height: fit-content;
+            }
         }
     }
 }
@@ -169,7 +175,18 @@ header{
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body{
+        .platform-slider{
+            .slick-prev{
+                left: -70px;
+            }
+            .slick-next{
+                right: -60px;
+            }    
+        }
+    }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) { }
