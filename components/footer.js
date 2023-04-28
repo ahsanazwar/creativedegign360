@@ -21,9 +21,23 @@ export default function Footer() {
                         </Col>
                     </Row>
                     <Row className="footer-navigation">
+                        <Col xl={12}>
+                            <div className="footer-rich-txt"> 
+                                <h3>growing businesses since 2005</h3> 
+                                    <p>Made with 
+                                    <span>
+                                        <Image className="img-fluid" src="/heart.svg" alt=""
+                                            width={32} height={32} layout="fixed" objectFit="contain"
+                                        />    
+                                    </span> in 25 cities around the world</p> 
+                                </div>
+                        </Col>
                         <Col xl={4} lg={4} md={4}>
-                            <p className="footer-head"><Link href=""><a>Digital Marketing</a></Link></p>
+                            {/* <p className="footer-head"><Link href=""><a>Digital Marketing</a></Link></p> */}
                             <ul>
+                                <li>
+                                    <Link href=""><a>Digital Marketing</a></Link>
+                                </li>
                                 <li>
                                     <Link href="">
                                         <a>search engine optimization</a>
@@ -62,8 +76,11 @@ export default function Footer() {
                             </ul>
                         </Col>
                         <Col xl={3} lg={3} md={3}>
-                            <p className="footer-head"><Link href=""><a>Website Design & Development</a></Link></p>
+                            {/* <p className="footer-head"><Link href=""><a>Website Design & Development</a></Link></p> */}
                             <ul>
+                                <li>
+                                    <Link href=""><a>Website Design & Development</a></Link>
+                                </li>
                                 <li>
                                     <Link href="">
                                         <a>custom wordpress website</a>
@@ -82,8 +99,11 @@ export default function Footer() {
                             </ul>
                         </Col>
                         <Col xl={2} lg={2} md={2}>
-                            <p className="footer-head"><Link href=""><a>Branding</a></Link></p>
+                            {/* <p className="footer-head"><Link href=""><a>Branding</a></Link></p> */}
                             <ul>
+                                <li>
+                                    <Link href=""><a>Branding</a></Link>
+                                </li>
                                 <li>
                                     <Link href="">
                                         <a>logo design</a>
@@ -107,8 +127,11 @@ export default function Footer() {
                             </ul>
                         </Col>
                         <Col xl={3} lg={3} md={3}>
-                            <p className="footer-head"><Link href=""><a>Social Media Marketing</a></Link></p>
+                            {/* <p className="footer-head"><Link href=""><a>Social Media Marketing</a></Link></p> */}
                             <ul>
+                                <li>
+                                    <Link href=""><a>Social Media Marketing</a></Link>
+                                </li>
                                 <li>
                                     <Link href="">
                                         <a>social media management</a>

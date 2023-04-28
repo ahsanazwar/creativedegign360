@@ -1,0 +1,137 @@
+
+.our-certificate-section{
+    padding: em(60) 0;
+    h3{
+        font-weight: 500;
+        margin-bottom: em(8);
+        text-align: center;
+        span{
+            font-weight: 700;
+        }
+    }
+    .thrive-industry-certifications {
+        border-top: none;
+        padding-top: em(40);
+        text-align: center;
+        ul{
+            li{
+                margin-right: 0;
+                margin-bottom: em(15);
+                text-align: center;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.border-right {
+    border-right: 1px solid #dee2e6;
+}
+
+.new-googlebadge {
+    width: em(155);
+    height: em(65);
+    display: block;
+    background: url("../public/thrive-certifications-logo-1.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-yextbadge {
+    margin: 0 em(15);
+    width: em(142);
+    height: em(60);
+    display: block;
+    background: url("../public/thrive-certifications-logo-2.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-shopifybadge {
+    width: em(140);
+    height: em(88);
+    display: block;
+    background: url("../public/thrive-certifications-logo-3.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-bingbadge {
+    width: em(250);
+    height: em(110);
+    display: block;
+    margin: 0 em(15);
+    background: url("../public/Partner-Badges-2022-Partner.png") no-repeat center;
+    background-position: 100%;
+    background-size: 100%;
+}
+
+.new-ifabadge {
+    width: em(170);
+    height: em(105);
+    display: block;
+    background-image: url("../public/ifa-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-businessbadge {
+    width: em(154);
+    height: em(33);
+    display: block;
+    background: url("../public/thrive-featured-logo-1.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-forbesbadge {
+    margin: 0 em(20) em(10);
+    width: em(134);
+    height: em(61);
+    display: block;
+    margin-right: em(35);
+    background: url("../public/thrive-featured-logo-2.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-huffingtonbadge {
+    width: em(147);
+    height: em(65);
+    display: block;
+    background: url("../public/thrive-featured-logo-3.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-mozbadge {
+    width: em(137);
+    height: em(44);
+    display: block;
+    margin: 0 em(40);
+    margin-right: em(50);
+    background: url("../public/thrive-featured-logo-4.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-sejbadge {
+    width: em(210);
+    height: em(56);
+    margin: 0 em(20);
+    background: url("../public/thrive-featured-logo-5.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.new-semrush {
+    display: block;
+    width: em(331);
+    height: em(46);
+    margin: em(10) auto;
+    background: url("../public/thrive-featured-logo-6.svg") no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+

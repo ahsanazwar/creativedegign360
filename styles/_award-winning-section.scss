@@ -1,0 +1,24 @@
+.award-winning-section{
+    padding: em(65);
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    h3{
+        font-weight: 500;
+        margin-bottom: em(8);
+        span{
+            font-weight: 700;
+        }
+    }
+    .read-more-btn{
+        margin: auto;
+        display: block;
+        text-decoration: none;
+    }
+    p{
+        margin: 0;
+        line-height: em(28);
+    }
+    .img-wrap{
+        margin-top: em(48);
+    }
+}

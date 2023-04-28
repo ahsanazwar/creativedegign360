@@ -1,32 +1,125 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import {Container,Row,Col} from 'react-bootstrap';
 
-export default function MarketingSection() {
+export default function MarketingSection(props) {
 
-
-      
     return(
     <>  
         <section className="marketing-section">
             <Container>
                 <Row>
-                <Col xl={7} md={7}>
-                        <div className="marketing-content">
-                            <h3>Were a Full Service Digital Marketing Company</h3>
-                            <p>
-                            At OuterBox, were one of the nations leading digital marketing agencies. Weve been crushing competitors since 2004, helping our clients dominate digital marketing. With more than 4.66 billion internet users and growing, we know your online image, reputation, and marketing strategy is more important than ever.
-
-                            Since inception, weve built OuterBoxs name on eCommerce. Weve been rated the #1 eCommerce SEO services provider in the world and have an in-house eCommerce website design team. The combination of design, development, and marketing under one roof allows us to create integrated marketing campaigns, making the most of every dollar you spend. As an award-winning web design company, we lead the industry in designing & developing custom websites that not only look amazing but focus on driving leads and sales.
-
-                            Our search marketing team offers proven SEO services to rank your website at the top of Google and other major search engines. We deliver the best Shopify SEO services, know the ins and outs of WordPress SEO, and are the SEO consultant you want on your team. In our 18+ years in business, weve worked across industries, from B2B SEO campaigns to B2C. We coordinate SEO seamlessly with your paid search efforts, offering Google Ads management, social media ads management, and email marketing services.
-
-                            With your entire digital marketing strategy working in harmony, the growth youve only dreamed of is possible.
-                            </p>
-                        </div>
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m1.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>SEARCH ENGINE OPTIMIZATION SEO</h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
                     </Col>
-                    <Col xl={5} md={5}>
-                        <Image src='/portfolio-image.webp' alt='logo' width={591} height={696}
-                        />
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m2.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>SEARCH ENGINE OPTIMIZATION SEO</h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
+                    </Col>
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m3.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>WEBSITE DESIGN & DEVELOPMENT </h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m4.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>PAY PER CLICK – PPC </h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
+                    </Col>
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m5.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>VIDEO PRODUCTION </h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
+                    </Col>
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m6.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>CONTENT WRITING </h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m7.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>REPUTATION MANAGEMENT </h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
+                    </Col>
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m8.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>CONVERSION OPTIMIZATION </h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
+                    </Col>
+                    <Col xl={4}>
+                        <ul>
+                            <li className="marketing-img"><Image src='/m9.png' alt='logo' width={69} height={65}/></li>
+                            <li className="marketing-content">
+                                <Link href=""><a> <h5>AMAZON MARKETING </h5></a></Link>
+                                <p>
+                                    Through careful keyword research and white hat practices, we can help 
+                                    you achieve high rankings in the major search engines.
+                                </p>
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>    

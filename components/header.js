@@ -19,38 +19,8 @@ export default function Header(props) {
                                         /></a>
                                     </Link>
                                 </div>
-                                <div className="header-right-nav">
-                                    <p className='head-tel'>Need an Expert Team? <Link href="tel:1-866-647-9218"><a> 1-866-647-9218</a></Link></p>
-                                    <div className="header-right-nav-content">
-                                        <div className="header-right-nav-img">
-                                            <Image src='/designrush (1).webp' alt='logo'
-                                                    width={132} height={39}
-                                            />
-                                        </div>
-                                        <div className="header-right-nav-img">
-                                            <Image src='/inc-500.webp' alt='logo'
-                                                    width={50} height={39}
-                                            />
-                                        </div>
-                                        <div className="header-right-nav-img">
-                                            <Image src='/google-partner.webp' alt='logo'
-                                                    width={83} height={35}
-                                            />
-                                        </div>
-                                        <Link href=""><a className="btn btn-secondary">Get a Free Quote</a></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>
-            <div className="header-bottom">
-                <Container>
-                    <Row>
-                        <Col xl={12}>
-                        <nav className="header-naviagations">
-                                <ul className="header-naviagations-list">
+                                <nav className="header-naviagations">
+                                     <ul className="header-naviagations-list">
                                     <li>
                                         <Link href=""><a className="">Digital Marketing</a></Link>
                                         <ul className="header-dropdown">
@@ -161,8 +131,12 @@ export default function Header(props) {
                                         </ul>
                                     </li>
                                     
-                                </ul>
-                            </nav>
+                                    </ul>
+                                </nav>
+                                <div className="header-right-nav">
+                                    <p className='head-tel'><Link href="tel:1-866-647-9218"><a> 1-866-647-9218</a></Link></p>
+                                </div>
+                            </div>
                         </Col>
                     </Row>
                 </Container>

@@ -65,7 +65,8 @@ $theme-colors: map-merge(
 }
 
 $font-family-base: 'poppins', sans-serif;
-$headings-font-family: 'poppins-bold', sans-serif;
+$headings-font-family: 'poppins', sans-serif;
+$headings-font-weight: 700;
 $headings-color: $text1;
 
 $slick-font-path: "/assets/fonts/";

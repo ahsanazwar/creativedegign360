@@ -1,11 +1,13 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
 const nextConfig = {
-  // reactStrictMode: false,
+  // reactStrictMode: true,
+    images: {
+      loader: "imgix",
+      path: "https://www.testapp.rayyserve.com/",
+  },
   output: 'export',
 }
 
-module.exports = {
-  distDir: 'dist',
-  trailingSlash: true,
-  nextConfig
-}
+module.exports = nextConfig

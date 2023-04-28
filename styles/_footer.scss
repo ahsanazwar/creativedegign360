@@ -29,7 +29,9 @@ footer{
             a{
                 color: $white;
                 @include transitions(0.3s);
-                text-transform: capitalize;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: em(2);
                 font-size: em(16);
                 i{
                     background: $white;
@@ -44,8 +46,8 @@ footer{
 }
 
 .footer-navigation{
-    background: $primary;
-    padding: em(40);
+    // background: $primary;
+    padding: 0 em(40) em(40) em(40);
     border-radius: 10px;
 }
 
@@ -57,6 +59,27 @@ footer{
         font-weight: 700;
         margin: 0;
         text-align: center;
+    }
+}
+
+.footer-rich-txt{
+    text-align: center;
+    color: $white;
+    padding-bottom: em(70);
+    h3{
+        color: inherit;
+        margin-bottom: 0;
+        text-transform: capitalize;
+
+    }
+    p{
+        color: inherit;
+        margin-bottom: 0;
+        font-size: em(22);
+        span{
+            vertical-align: middle;
+            margin: 0 em(5);
+        }
     }
 }
 

@@ -1,0 +1,56 @@
+.client-testimonial-section{
+    padding: em(80) 0 em(40);
+    h3{
+        font-weight: 500;
+        margin-bottom: em(8);
+        span{
+            font-weight: 700;
+        }
+    }
+}
+
+.testimonial-card{
+    padding: em(20);
+    text-align: center;
+    p{
+        margin-bottom: em(10);
+    }
+}
+
+.client-name{
+    font-size: em(18);
+    font-weight: 700;
+    color: $primary;
+}
+
+.highlighted-text{
+    margin: em(15) auto;
+    background: #f5d74f;
+    font-size: em(16);
+    color: #443f35;
+    padding: em(4) em(6);
+    font-weight: 700;
+}
+
+.testimonial-client-img{
+    width: em(130);
+    height: em(120);
+    margin: 0 auto em(10);
+    text-align: center;
+    &.marci-review{
+        background-position: center 130px;
+        background-image: url(../public/badge-sprite-compressed-new-2.jpg);
+    }
+    &.whitney-review{
+        background-position: -477px -437px;
+        background-image: url(../public/badge-sprite-compressed-new-2.jpg);
+    }
+    &.chad-review{
+        background-position: -341px -12px;
+        background-image: url(../public/badge-sprite-compressed-new-2.jpg);
+    }
+}
+
+.why-choose-section{
+    padding: em(10) 0 em(80);
+}

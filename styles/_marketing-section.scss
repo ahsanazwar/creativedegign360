@@ -1,6 +1,39 @@
 .marketing-section{
-    padding: em(30) 0 em(50);
-    h3{
-        color: $primary;
+    overflow-x: hidden;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        padding: em(40);
+        .marketing-img{
+            margin-right: em(15);
+        }
+        .marketing-content{
+            width: 60%;
+            h5{
+                line-height: em(25);
+                font-size: em(22);
+                margin-bottom: em(10);
+            }
+        }
+    }
+    .col-xl-4 {
+       border-left: 1px solid #d9d9d9;
+    }
+    .row{
+        position: relative;
+        &:before{
+            border-bottom: 1px solid #d9d9d9;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: -50vw;
+            left: -50vw;
+            width: 250%;
+        }
+        .col-xl-4{
+            &:first-child{
+                border: none;
+            }
+        }
     }
 }

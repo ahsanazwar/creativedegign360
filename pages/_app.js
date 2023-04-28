@@ -20,14 +20,14 @@ function MyApp({ Component, pageProps }) {
   
   return(
 
-        <Scrollbars renderThumbVertical={pageProps => <div {...pageProps} className="thumb-vertical"/>} autoHide universal={true} {...pageProps}
+    <Scrollbars renderThumbVertical={pageProps => <div {...pageProps} className="thumb-vertical"/>} autoHide universal={true} {...pageProps}
 
-             onScrollFrame={handleScrollFrame}
-        >
-      <Provider store={store}>
-        <Component {...pageProps} scrollEvent={scrollEvent}/>
-      </Provider>
-    </Scrollbars>
+    onScrollFrame={handleScrollFrame}
+>
+<Provider store={store}>
+<Component {...pageProps} scrollEvent={scrollEvent}/>
+</Provider>
+</Scrollbars>
   )
 }
 

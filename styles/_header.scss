@@ -1,6 +1,5 @@
 
 .header-top{
-    background: $primary;
     padding: em(20) 0;
 }
 
@@ -9,32 +8,19 @@
 }
 
 header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
     .head-tel{
-        color: $white;
+        color: $black;
         font-size: em(20);
-        margin-bottom: em(15);
+        margin: em(18) 0;
         text-align: end;
         a{
             text-decoration: none;
-            color: $success;
-        }
-    }
-    .header-right-nav-content{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        .header-right-nav-img{
-            margin-right: em(35);
-        }
-        .btn{
-            &.btn-secondary{
-                height: fit-content;
-            }
+            color: $black;
         }
     }
 }
@@ -51,28 +37,47 @@ header{
         align-items: center;
         justify-content: space-evenly;
         li{
+            margin-right: em(25);
+            &:last-child{
+                margin: 0;
+            }
             a{
-            color: $white;
-            font-size: em(20);
+            color: $black;
+            font-size: em(16);
             text-transform: uppercase;
             letter-spacing: 3px;
             font-weight: 700;
+            position: relative;
             @include transition(0.5s);
+            display: block;
+            margin: em(28) 0;
             &:after{
                 content: '';
                 width: em(10);
                 height: em(10);
-                background-image: url("../public/drop-down-arrow.svg");
+                background-image: url("../public/drop-down-arrow-black.svg");
                 display: inline-block;
                 background-position: center;
                 background-size: cover;
                 vertical-align: middle;
                 margin-left: em(5);
             }
+            &:before{
+                content: '';
+                width: 0;
+                height: em(2);
+                background: $black;
+                position: absolute;
+                bottom: em(-5);
+                left: 0;
+                right: 0;
+                margin: auto;
+                transition: 0.5s;
+            }
             }
             li{
                 a{
-                    &:after{
+                    &:after,&:before{
                         content: none;
                     }
                 }
@@ -115,18 +120,30 @@ header{
                 // display: none;
                 position: absolute;
                 left: 0;
-                top: 100%;
+                top: auto;
+                // bottom: em(-15);
                 background: $white;
                 @include borderRadius(5px);
-                overflow: hidden;
+                // overflow: hidden;
                 width: em(320);
                 opacity: 0;
                 display: none;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    top: -12px;
+                    left: 35px;
+                    border-left: 12px solid transparent;
+                    border-right: 12px solid transparent;
+                    border-bottom: 12px solid $white;
+                }
                 li{
                     padding: 0;
-                    
+                    margin: 0;
                     &::before{
-                        content: '';
+                        content: none;
                         width: em(10);
                         height: 100%;
                         position: absolute;
@@ -143,6 +160,7 @@ header{
                     @include transition(0.5s);
                     letter-spacing: 1px;
                     text-decoration: none;
+                    margin: 0;
                     &:hover{
                         color: $white;
                     }
@@ -167,7 +185,9 @@ header{
         ul{
             a{
                 &:hover{
-                    color: $success;
+                    &:before{
+                        width: 100%;
+                    }
                 }
             }
         }

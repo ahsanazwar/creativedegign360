@@ -1,0 +1,32 @@
+.subscribe-section{
+    background-color: $primary;
+    .subscribe-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: em(40) 0;
+        h3{
+            margin: 0;
+            color: $white;
+        }
+        p{
+            margin: 0;
+            color: $white;
+        }
+    }
+    .subscribe-form{
+        display: flex;
+        align-items: center;
+        .field-error{
+            margin-left: 0;
+        }
+        input{
+            padding: em(6) em(25);
+            margin-right: em(15);
+        }
+        .btn.btn-secondary{
+            padding: em(8) em(25);
+            letter-spacing: 1px;
+        }
+    }
+}

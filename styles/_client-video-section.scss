@@ -1,0 +1,53 @@
+// .client-video-section{
+
+// }
+
+.client-video-box{
+    border: 1px solid #ccc;
+    a{
+        display: block;
+        line-height: 0;
+    }
+    .result-details{
+        padding: em(30) em(35) em(40);
+    }
+    .client-result-txt{
+        display: flex;
+        margin-bottom: em(25);
+        .result-custom{
+            width: 50%;
+            padding: 0 em(15);
+            &.left-custom {
+                border-right: 2px solid #ccc;
+            }
+            .result_psntg{
+                font-size: em(64);
+                color: $primary;
+                line-height: initial;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                line-height: 1;
+                sup{
+                    position: relative;
+                    top: 0px;
+                    font-size: em(15);
+                    font-weight: bold;
+                }
+            }
+            p{
+                margin: 0;
+            }
+        }
+    }
+}
+
+.tagline{
+    background: #f5d74f;
+    padding: em(15) 0;
+    text-align: center;
+    h3{
+        margin: 0;
+    }
+}

@@ -1,0 +1,12 @@
+.rating-section{
+    padding: em(20) 0;
+    background-color: $secondary;
+    .rating-box{
+        text-align: center;
+        p{
+            margin: 0;
+            color: #f5d74f;
+            font-weight: 700;
+        }
+    }
+}

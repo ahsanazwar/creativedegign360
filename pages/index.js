@@ -6,16 +6,16 @@ import Meta from '@components/meta';
 import Header from '@components/header';
 import Footer from '@components/footer';
 import MainBanner from '@components/main-banner';
-import PartnersSection from '@components/partners-section';
-import ClientSection from '@components/client-section';
+import AwardWinningSection from '@components/award-winning-section';
+import GrowthSection from '@components/growth-section';
+import ClientTestimonialSection from '@components/clients-testimonial';
+import WhyChooseSection from '@components/why-choose-section';
+import SectionHeading from '@components/section-heading';
+import ClientVideoSection from '@components/client-video-section';
+import OurCertificateSection from '@components/our-certificates';
+import BusinessContact from '@components/business-contact';
 import MarketingSection from '@components/marketing-section';
-import ServicesSection from '@components/services-section';
-import PlatformsPartners from '@components/platforms-partners';
-import WhySection from '@components/why-creative';
-import PopulerArtices from '@components/populer-articles';
-
-
-
+import RatingSection from '@components/rating-section';
 
 
 export default function Home(props) {
@@ -31,19 +31,33 @@ export default function Home(props) {
       <Header {...props}/>
 
         <main>
-            <MainBanner/>
-            <PartnersSection/>
-            <ServicesSection/>
-            <PlatformsPartners/>
-            <ClientSection/>
-            <PlatformsPartners/>
+            <MainBanner bannerTitle = "RESULTS" innerTitlle = "DRIVEN" content = "DIGITAL MARKETING AGENCY."/>
+            <RatingSection/>
+            <SectionHeading
+              heading="Our Clients"
+              headingInner="Get Results"
+            />
+            <ClientVideoSection/>
+            <ClientTestimonialSection/>
+            <SectionHeading
+              heading="Why Choose Thrive For Your"
+              headingInner="Digital Marketing Agency?"
+            />
+            <WhyChooseSection/>
+            <AwardWinningSection/>
+            <OurCertificateSection/>
+            <GrowthSection/>
+            <SectionHeading
+              heading="Our"
+              headingInner="Digital Marketing Expertise"
+            />
             <MarketingSection/>
-            <WhySection/>
-            <PopulerArtices/>
-            <PartnersSection/>
+            <BusinessContact/>
+
         </main>
       
       <Footer/>
     </div>
   )
 }
+

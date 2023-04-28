@@ -1,0 +1,131 @@
+
+.blogs-section{
+    padding: em(50) 0;
+}
+
+.blogs-card{
+    // display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li{
+        // width: 25%;
+        height: fit-content;
+        margin: em(15) em(35);
+        border: 6px solid rgb(241, 242, 234);
+        padding: em(10);
+        cursor: pointer;
+        &:hover{
+            border-color: $primary;
+            h5{
+                opacity: 0.8;
+            }
+        }
+        .blog-card-content{
+            padding: em(10);
+            h5{
+                color: $primary;
+                line-height: em(20);
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .entry-data,.blog-tags{
+            a{
+                font-weight: 700;
+            }
+        }
+        .blog-content{
+            word-break: break-all;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            table{
+                width: 100% !important;
+                overflow-x: scroll;
+            }
+            img{
+                width: 100%;
+                max-height: em(250);
+            }
+        }
+    }
+}
+
+.blog-search-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: em(30) em(50);
+}
+
+.blog-search-wrap{
+    border-bottom: 1px solid $black;
+}
+
+.subscribe-form{
+    display: flex;
+    align-items: center;
+    input{
+        padding: em(5) em(30);
+        border: 2px solid #858383;
+        outline: none;
+    }
+    .btn.btn-secondary{
+        padding: em(6) em(12) em(6) em(12);
+        border-radius: 0;
+    }
+}
+
+.category-dropdown{
+    padding: em(10) em(140) em(10) em(15);
+    background: #d3dcad;
+    position: relative;
+    cursor: pointer;
+    a{
+        color: $black;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        right: em(15);
+        top: 50%;
+        transform: translateY(-50%);
+        width: em(15);
+        height: em(15);
+        background-image: url("../public/drop-down-arrow-black.svg");
+        background-position: center;
+        background-size: cover;
+        vertical-align: middle;
+        margin-left: em(5);
+    }
+    ul{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        background: inherit;
+        border: 1px solid $black;
+        max-height: em(283);
+        overflow-y: scroll;
+        li{
+            padding: em(10) em(15);
+            transition: 0.2s;
+            a{
+                transition: 0.2s;
+            }
+            &:hover{
+                background: $primary;
+                a{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
