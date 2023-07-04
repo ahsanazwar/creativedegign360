@@ -9,7 +9,7 @@ html {
     overflow: auto;
     display: flex;
     flex-direction: column-reverse;
-  }
+}
 
 body {
   font-size: em(16);
@@ -79,7 +79,6 @@ ul{
   padding: 0;
 }
 
-
 a, button {
   outline: none !important;
   @include transitions(0.2s);  
@@ -90,7 +89,7 @@ a, button {
 
 .container {
   padding: 0 em(15);
-  max-width: 81.250%;
+  max-width: 85%;
 
   .row {
     margin: 0 em(-15);
@@ -239,6 +238,14 @@ p {
     border: 1px solid $secondary;
     font-weight: 700;
   }
+  &.btn-warning{
+    background-image: $warningGradient;
+    border: none;
+    color: $white;
+    box-shadow: 20px 10px 46px -14px #000;
+    @include borderRadius(10px);
+  }
+
 }
 
 
@@ -378,7 +385,7 @@ input[type="text"],input[type="password"],.react-tel-input .form-control{
 
 .btn-lg{
   &.btn{
-    &.btn-secondary{
+    &.btn-secondary,&.btn-warning{
         font-size: em(20);
         padding: em(12) em(30);
     }
@@ -392,6 +399,57 @@ input[type="text"],input[type="password"],.react-tel-input .form-control{
   transition: 0.2s;
   &:hover{
     color: $black;
+  }
+}
+
+.warning-text{
+  color: $warning;
+}
+
+.warning-bg-text{
+  background-image: $warningGradient;
+  color: $white;
+  display: inline-block;
+  padding: 0 em(15);
+  margin-bottom: em(45);
+  @include borderRadius(30px);
+}
+
+.content-list-with-img{
+  display: flex;
+  margin-bottom: em(5);
+  h5{
+    margin-bottom: em(8);
+  }
+  .img-wrap{
+    margin-right: em(25);
+  }
+  p{
+    margin: 0;
+  }
+}
+
+.slick-slider{
+  .slick-arrow{
+    background-color: $warning;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    top: auto;
+    bottom: -90px;
+    padding: 10px;
+    &:before{
+      content: none;
+    }
+    &.slick-prev {
+      left: 38%;
+    }
+    &.slick-next {
+      right: 44%;
+    }
   }
 }
 

@@ -1,0 +1,36 @@
+.build-section{
+    background-image: url(../public/build-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: em(135) 0 em(130);
+    .build-wrapper{
+        width: 44%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .build-subhead{
+        font-size: em(20);
+    }
+    h1{
+        color: $white;
+        font-size: em(54);
+        margin-bottom: em(5);
+    }
+    p{
+        color: $white;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        margin-top: em(40);
+        h2{
+            color: $warningTwo;
+            margin: 0;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}

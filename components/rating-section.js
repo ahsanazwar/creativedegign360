@@ -8,7 +8,7 @@ export default function RatingSection(props) {
         <section className="rating-section">
             <Container>
                 <Row className="justify-content-md-center">
-                    <Col xl={3}>
+                    <Col xl={3} lg={3} sm={3}>
                         <div className="rating-box">
                             <div>
                                 <Image src='/google-reviews-stats-new.svg' alt='logo' width={130} height={55}/>
@@ -19,7 +19,7 @@ export default function RatingSection(props) {
                             <p>150+ Reviews</p>
                         </div>
                     </Col>
-                    <Col xl={3}>
+                    <Col xl={3} lg={3} sm={3}>
                         <div className="rating-box">
                             <div>
                                 <Image src='/clutch-reviews-stats-new.svg' alt='logo' width={130} height={55}/>
@@ -30,7 +30,7 @@ export default function RatingSection(props) {
                             <p>150+ Reviews</p>
                         </div>
                     </Col>
-                    <Col xl={3}>
+                    <Col xl={3} lg={3} sm={3}>
                         <div className="rating-box">
                             <div>
                                 <Image src='/new-up-city-icon-01.png' alt='logo' width={130} height={55}/>

@@ -6,6 +6,7 @@ const nextConfig = {
     images: {
       loader: "imgix",
       path: "https://www.testapp.rayyserve.com/",
+      // path: "http://localhost:3000/",
   },
   output: 'export',
 }

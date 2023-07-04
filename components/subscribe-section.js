@@ -29,7 +29,6 @@ function SubscribeSection(props) {
         };
         props.actions.subscribe(payload)
         .then((todos) => {
-            console.log(todos);
             if (!todos.failed && !todos.pending) {
                 
                 toast.success(todos.data.message, {

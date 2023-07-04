@@ -1,8 +1,31 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import {Container,Row,Col} from 'react-bootstrap';
+import Slider from "react-slick";
+import {SampleNextArrow,SamplePrevArrow} from '@functions/slider-arrows';
 
 export default function OurCertificateSection() {
+    const sliderTestimonialText = {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        swipe: true,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+      }
+
+      const sliderTestimonialTextTwo = {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: true,
+        infinite: true,
+        swipe: true,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
+      }  
 
     return(
     <>  
@@ -13,32 +36,26 @@ export default function OurCertificateSection() {
                         <h3>OUR <span>CERTIFICATIONS</span></h3>
                         <div className="thrive-industry-certifications">
                             <ul>
-                                <li className="haslink">
-                                    <Link href="https://thriveagency.com/google-vip-partner-agency/" target="_blank">
-                                        <a className="new-googlebadge"></a>
-                                    </Link>    
-                                </li>
-                                <li className="haslink">
-                                    <Link href="http://www.yext.com/" target="_blank">
-                                        <a className="new-yextbadge"></a>
-                                    </Link>
-                                </li>
-                                <li className="haslink">
-                                    <Link href="https://thriveagency.com/web-marketing-services/shopify-web-designers/" target="_blank">
-                                        <a className="new-shopifybadge"></a>
-                                    </Link>
-                                </li>
-                                <li className="haslink">
-                                    <Link href="https://learninglab.about.ads.microsoft.com/certification/membership-directory/?searchtext=Thrive%20Internet%20Marketing" target="_blank">
-                                        <a className="new-bingbadge">
-                                        </a>
-                                    </Link>
-                                </li>
-                                <li className="haslink">
-                                    <Link href="https://www.franchise.org/suppliers/thrive-agency" target="_blank">
-                                        <a className="new-ifabadge"></a>
-                                    </Link>
-                                </li>
+                                <Slider
+                                    className="testimonial-text-slider"
+                                    {...sliderTestimonialText}
+                                >
+                                    <li>
+                                        <Image src='/google.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                    <li >
+                                        <Image src='/ifa.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                    <li>
+                                        <Image src='/microsof.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                    <li>
+                                        <Image src='/shopify.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                    <li>
+                                        <Image src='/yext-certified-partner.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                </Slider>
                             </ul>
                         </div>
                     </Col>
@@ -46,12 +63,26 @@ export default function OurCertificateSection() {
                         <h3><span>FEATURED</span> IN</h3>
                         <div className="thrive-industry-certifications">
                             <ul>
-                                <li className="new-businessbadge"></li>
-                                <li className="new-forbesbadge"></li>
-                                <li className="new-huffingtonbadge"></li>
-                                <li className="new-mozbadge"></li>
-                                <li className="new-sejbadge"></li>
-                                <li className="new-semrush"></li>
+                                <Slider
+                                    className="testimonial-text-slider"
+                                    {...sliderTestimonialTextTwo}
+                                >
+                                    <li>
+                                        <Image src='/business.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                    <li >
+                                        <Image src='/moz.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                    <li>
+                                        <Image src='/sej.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                    <li>
+                                        <Image src='/semrush.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                    <li>
+                                        <Image src='/the-hiffinger.png' alt='logo' width={185} height={80}/>
+                                    </li>
+                                </Slider>
                             </ul>
                         </div>
                     </Col>

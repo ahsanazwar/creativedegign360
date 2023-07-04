@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export function SampleNextArrow(props){
     const { className, onClick } = props;
     return (
@@ -5,7 +6,7 @@ export function SampleNextArrow(props){
         href="javascript:"
         className={className}
         onClick={onClick}
-      ><i className="icon-slider-right-arrow"></i></a>
+      ><Image src='/left-arrow-slide.png' alt='logo' width={23} height={23}/></a>
     );
   }
   
@@ -16,6 +17,6 @@ export function SamplePrevArrow(props){
         href="javascript:"
         className={className}
         onClick={onClick}
-      ><i className="icon-slider-left-arrow"></i></a>
+      ><Image src='/right-arrow-slide.png' alt='logo' width={23} height={23}/></a>
     );
   }

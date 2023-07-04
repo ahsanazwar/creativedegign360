@@ -3,6 +3,8 @@ import {
     blogsApi,
     blogsCategoryApi,
     blogsBySlugApi,
+    blogsByCategorySlugApi,
+    blogsBySearchApi,
 } from '../apis/usersApis';
 
 
@@ -97,7 +99,60 @@ export const blogsDetailGet = (blodId) => {
         dispatch({ type: 'USER', data: USER });
         return blogsBySlugApi(blodId)
             .then((todos) => {
-                console.log("Hello this "+JSON.stringify(todos));
+                USER.data = todos.data.data;
+                USER.pending = false;
+                USER.failed = false;
+                dispatch({ type: 'USER', data: USER });
+                return USER;
+            })
+            .catch((error) => {
+                USER.data = false;
+                USER.error = error;
+                USER.pending = false;
+                USER.failed = true;
+                dispatch({ type: 'USER', data: USER });
+                return USER;
+            });
+    };
+};
+
+export const blogsByCategoryGet = (blodId) => {
+    return (dispatch) => {
+        const USER = {
+            pending: true,
+            failed: false,
+            data: false,
+        };
+        dispatch({ type: 'USER', data: USER });
+        return blogsByCategorySlugApi(blodId)
+            .then((todos) => {
+                USER.data = todos.data.data;
+                USER.pending = false;
+                USER.failed = false;
+                dispatch({ type: 'USER', data: USER });
+                return USER;
+            })
+            .catch((error) => {
+                USER.data = false;
+                USER.error = error;
+                USER.pending = false;
+                USER.failed = true;
+                dispatch({ type: 'USER', data: USER });
+                return USER;
+            });
+    };
+};
+
+export const blogsBySearchGet = (blodId) => {
+    return (dispatch) => {
+        const USER = {
+            pending: true,
+            failed: false,
+            data: false,
+        };
+        dispatch({ type: 'USER', data: USER });
+        return blogsBySearchApi(blodId)
+            .then((todos) => {
                 USER.data = todos.data.data;
                 USER.pending = false;
                 USER.failed = false;

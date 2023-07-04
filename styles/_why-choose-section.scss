@@ -1,0 +1,27 @@
+.why-choose-section{
+    background-image: url(../public/section-bg.png);
+    background-size: cover;
+    background-position: center center;
+    padding: em(170) 0 em(120);
+    position: relative;
+    .why-pattern{
+        position: absolute;
+        left: em(60);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .why-choose-lists-content{
+        .content-list-with-img{
+            background-color: $white;
+            box-shadow: 0px 0px 30px -23px #000;
+            margin-bottom: em(20);
+            padding: em(15);
+            @include borderRadius(10px);
+        }
+        .img-wrap{
+            background-color: $warningTwo;
+            padding: em(10) em(15);
+            @include borderRadius(10px);
+        }
+    }
+}

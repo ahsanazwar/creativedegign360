@@ -9,7 +9,7 @@ export default function MarketingSection(props) {
         <section className="marketing-section">
             <Container>
                 <Row>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m1.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">
@@ -21,7 +21,7 @@ export default function MarketingSection(props) {
                             </li>
                         </ul>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m2.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">
@@ -33,7 +33,7 @@ export default function MarketingSection(props) {
                             </li>
                         </ul>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m3.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">
@@ -47,7 +47,7 @@ export default function MarketingSection(props) {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m4.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">
@@ -59,7 +59,7 @@ export default function MarketingSection(props) {
                             </li>
                         </ul>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m5.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">
@@ -71,7 +71,7 @@ export default function MarketingSection(props) {
                             </li>
                         </ul>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m6.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">
@@ -85,7 +85,7 @@ export default function MarketingSection(props) {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m7.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">
@@ -97,7 +97,7 @@ export default function MarketingSection(props) {
                             </li>
                         </ul>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m8.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">
@@ -109,7 +109,7 @@ export default function MarketingSection(props) {
                             </li>
                         </ul>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <ul>
                             <li className="marketing-img"><Image src='/m9.png' alt='logo' width={69} height={65}/></li>
                             <li className="marketing-content">

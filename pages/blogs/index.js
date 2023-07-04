@@ -21,20 +21,16 @@ function Blogs(props) {
 
   useEffect(() => {
     getMorePost();
-
-  });
+  },[myData]);
 
   const getMorePost = () => {
     props.actions
             .blogsGet()
             .then((todos) => {
-                if (todos.data.length) {
-                    // console.log(JSON.stringify(todos.data.slice(0,1)));
-                    // setData(todos.data);
+                if (!todos.failed && !todos.pending) {
 
                     const newPosts = todos.data;
                     setData(newPosts);
-                }else{
                     setHasMore(false);
                 }
             });

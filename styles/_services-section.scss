@@ -1,0 +1,58 @@
+.services-section{
+    padding: em(60) 0;
+    .warning-text{
+        margin-bottom: em(10);
+    }
+    h2{
+        margin-bottom: em(30);
+    }
+}
+
+.services-card{
+    background-color: $white;
+    box-shadow: 0px 0px 30px -23px #000;
+    text-align: center;
+    padding: em(35) em(70) em(25);
+    margin-bottom: em(20);
+    @include borderRadius(20px);
+    position: relative;
+    overflow: hidden;
+    &:hover{
+        .services-card-detail{
+            // display: block;
+            opacity: 1;
+        }    
+    }
+    .services-card-detail{
+        // display: none;
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: $warningGradient;
+        padding: em(35) em(70) em(25);
+        z-index: 9;
+        @include transition(0.5s);
+        cursor: pointer;
+        h4{
+            color: $white;
+        }
+        p{
+            color: $white;
+        }
+        .btn{
+            color: $white;
+            border: 1px solid $white;
+            margin-top: em(12);
+        }
+    }
+    p{
+        margin: 0;
+    }
+    h4{
+        line-height: em(20);
+        margin-bottom: em(10);
+    }
+}

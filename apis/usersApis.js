@@ -15,3 +15,11 @@ export const blogsCategoryApi = (payload) => {
 export const blogsBySlugApi = (id) => {
     return config.get(`/getBlogsBySlug/${id}`);
 };
+
+export const blogsByCategorySlugApi = (id) => {
+    return config.get(`/getBlogsBycategorySlug/${id}`);
+};
+
+export const blogsBySearchApi = (id) => {
+    return config.get(`/getSearchBlog/${id}`);
+};

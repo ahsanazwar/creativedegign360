@@ -7,6 +7,72 @@ export default function Header(props) {
 
     return(
         <header className={props.scrollEvent}>
+            <div className="header-social">
+                <Container>
+                    <Row>
+                        <Col xl={12}>
+                            <div className="header-social-wrapper">
+                                <ul className="header-contact-items">
+                                    <li>
+                                        <div className="img-wrap">
+                                            <Image src='/email-icon.png' alt='logo' width={27} height={27}/>
+                                        </div>
+                                        <Link href="mailto:Info@creative360pro.com">
+                                            <a>Info@creative360pro.com</a>
+                                        </Link>  
+                                    </li>
+                                    <li>
+                                        <div className="img-wrap">
+                                            <Image src='/mobile-icon.png' alt='logo' width={27} height={27}/>
+                                        </div>
+                                        <Link href="tel:+1 973-553-4078">
+                                            <a>+1 973-553-4078</a>
+                                        </Link>  
+                                    </li>
+                                    <li>
+                                        <div className="img-wrap">
+                                            <Image src='/phone-icon.png' alt='logo' width={27} height={27}/>
+                                        </div>
+                                        <Link href="tel:+1 609-526-8045">
+                                            <a>+1 609-526-8045</a>
+                                        </Link>  
+                                    </li>
+                                    
+                                </ul>
+                                <ul className="header-social-items">
+                                    <li>
+                                        <Link href="">
+                                            <a>
+                                                <div className="img-wrap">
+                                                    <Image src='/fb.svg' alt='logo' width={21} height={21}/>
+                                                </div>
+                                            </a>
+                                        </Link>  
+                                    </li>
+                                    <li>
+                                        <Link href="">
+                                            <a>
+                                                <div className="img-wrap">
+                                                    <Image src='/linkedin.svg' alt='logo' width={21} height={21}/>
+                                                </div>
+                                            </a>
+                                        </Link>  
+                                    </li>
+                                    <li>
+                                        <Link href="">
+                                            <a>
+                                                <div className="img-wrap">
+                                                    <Image src='/insta.svg' alt='logo' width={21} height={21}/>
+                                                </div>
+                                            </a>
+                                        </Link>  
+                                    </li>
+                                </ul>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </div>
             <div className="header-top">
                 <Container>
                     <Row>
@@ -14,16 +80,16 @@ export default function Header(props) {
                             <div className="header-nav">
                                 <div className="head-site-logo">
                                     <Link href="/">
-                                        <a><Image src='/logo-final.webp' alt='logo'
-                                            width={260} height={80}
+                                        <a><Image src='/main-logo.svg' alt='logo'
+                                            width={195} height={80}
                                         /></a>
                                     </Link>
                                 </div>
                                 <nav className="header-naviagations">
                                      <ul className="header-naviagations-list">
                                     <li>
-                                        <Link href=""><a className="">Digital Marketing</a></Link>
-                                        <ul className="header-dropdown">
+                                        <Link href=""><a className="">Home</a></Link>
+                                        {/* <ul className="header-dropdown">
 
                                             <li>
                                                 <Link href="">
@@ -61,80 +127,29 @@ export default function Header(props) {
                                                 </Link>
                                             </li>
                                             
-                                        </ul>
+                                        </ul> */}
                                     </li>
 
                                     <li>
-                                        <Link href=""><a className="">Website Design & Development</a></Link>
-                                        <ul className="header-dropdown">
-
-                                            <li>
-                                                <Link href="">
-                                                    <a>custom wordpress website</a>
-                                                </Link>    
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>business website</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>ecommerce website</a>
-                                                </Link>
-                                            </li>
-                                            
-                                        </ul>
+                                        <Link href=""><a className="">About</a></Link>
                                     </li>
                                     <li>
-                                        <Link href=""><a className="">Branding</a></Link>
-                                        <ul className="header-dropdown">
-
-                                            <li>
-                                                <Link href="">
-                                                    <a>logo design</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>business profile design</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>flyer design</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>brochure design</a>
-                                                </Link>
-                                            </li>
-                                            
-                                        </ul>
+                                        <Link href=""><a className="">Services</a></Link>
                                     </li>
                                     <li>
-                                        <Link href=""><a className="">Social Media Marketing</a></Link>
-                                        <ul className="header-dropdown">
-
-                                            <li>
-                                                <Link href="">
-                                                    <a>social media management</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="">
-                                                    <a>social media advertisment</a>
-                                                </Link>
-                                            </li>
-                                            
-                                        </ul>
+                                        <Link href=""><a className="">Our Packages</a></Link>
+                                    </li>
+                                    <li>
+                                        <Link href=""><a className="">Blogs</a></Link>
+                                    </li>
+                                    <li>
+                                        <Link href=""><a className="">Contact us</a></Link>
                                     </li>
                                     
                                     </ul>
                                 </nav>
                                 <div className="header-right-nav">
-                                    <p className='head-tel'><Link href="tel:1-866-647-9218"><a> 1-866-647-9218</a></Link></p>
+                                    <Link href=""><a className='btn btn-warning'> Get A Free Quote</a></Link>
                                 </div>
                             </div>
                         </Col>

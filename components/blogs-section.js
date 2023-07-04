@@ -8,31 +8,7 @@ import BlogsCard from './blogs-card';
 
 
 function BlogsSection(props) {
-    // const [myData, setData] = useState([]);
-    // const [hasMore, setHasMore] = useState(true);
-
-    // useEffect(() => {
-    // getMorePost();
-
-    // });
-
-    // const getMorePost = () => {
-    //     props.actions
-    //             .blogsGet()
-    //             .then((todos) => {
-    //                 if (todos.data.length) {
-    //                     // console.log(JSON.stringify(todos.data.slice(0,1)));
-    //                     // setData(todos.data);
-
-    //                     const newPosts = todos.data;
-    //                     setData(newPosts);
-    //                 }else{
-    //                     setHasMore(false);
-    //                 }
-    //             });
-        
-    //   };
-
+    // console.log("hogidogi "+ JSON.stringify(props.getBlogs));
     return(
     <>  
         <section className="blogs-section">
@@ -54,7 +30,7 @@ function BlogsSection(props) {
                                <ResponsiveMasonry columnsCountBreakPoints={{350: 1, 750: 2, 900: 3}}>
                                     <Masonry>
                                         {   
-                                            props.getBlogs.map((blogs) => {
+                                            props.getBlogs? props.getBlogs.map((blogs) => {
                                                 return(
                                                     <>
                                                         <BlogsCard
@@ -70,7 +46,7 @@ function BlogsSection(props) {
                                                     </>
                                                         
                                                 )
-                                            })
+                                            }) : ''
                                         }
                                     </Masonry>
                             </ResponsiveMasonry>

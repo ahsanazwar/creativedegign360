@@ -37,7 +37,7 @@ header{
         align-items: center;
         justify-content: space-evenly;
         li{
-            margin-right: em(25);
+            margin-right: em(35);
             &:last-child{
                 margin: 0;
             }
@@ -52,7 +52,7 @@ header{
             display: block;
             margin: em(28) 0;
             &:after{
-                content: '';
+                // content: '';
                 width: em(10);
                 height: em(10);
                 background-image: url("../public/drop-down-arrow-black.svg");
@@ -66,7 +66,7 @@ header{
                 content: '';
                 width: 0;
                 height: em(2);
-                background: $black;
+                background: $secondary;
                 position: absolute;
                 bottom: em(-5);
                 left: 0;
@@ -170,6 +170,48 @@ header{
     }
 }
 
+.header-social{
+    padding: em(20) 0;
+    box-shadow: 0px 0px 30px -23px #000;
+}
+
+.header-contact-items{
+    display: flex;
+    align-items: center;
+    li{
+        display: flex;
+        align-items: center;
+        margin-right: em(45);
+        &:last-child{
+            margin-right: 0;
+        }
+        .img-wrap{
+            margin-right: em(10);
+        }
+        a{
+            color: $black;
+            font-weight: 700;
+        }
+    }
+}
+
+.header-social-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-social-items{
+    display: flex;
+    align-items: center;
+    li{
+        margin-right: em(15);
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
 // Laptops large devices (desktops, 1600px and up)
 @media (min-width: 1600px) and (max-width: 1699.98px) { }
 
@@ -185,6 +227,7 @@ header{
         ul{
             a{
                 &:hover{
+                    color: $secondary;
                     &:before{
                         width: 100%;
                     }

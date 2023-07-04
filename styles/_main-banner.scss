@@ -1,29 +1,34 @@
+.banner-pattern{
+    position: absolute;
+    left: 0;
+}
 .main-banner-section{
-    background-image: url("../public/bg1.webp");
-    background-repeat: no-repeat;
+    background-image: url(../public/section-bg.png);
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: em(200) 0;
+    padding: em(180) 0 em(100);
     position: relative;
     line-height: 5;
-    &:before{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #b0adad99;
-        z-index: 0;
+    .banner-right-img{
+        margin-top: em(100);
     }
     h2{
-        font-size: em(85);
+        font-size: em(52);
+        margin-bottom: em(3);
+        span{
+            color: $secondary;
+        }
+    }
+    h3{
         color: $white;
         margin-bottom: em(3);
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
         span{
             color: $secondary;
         }
@@ -38,6 +43,11 @@
     }
     .btn-lg{
         @include borderRadius(45px);
+    }
+    img{
+        width: 70%;
+        height: em(500);
+        margin:0 auto em(40);
     }
 }
 

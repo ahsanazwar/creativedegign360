@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 export default function BlogsCard(props) {
     var tags = [props.blogTags.split(',')];
-    console.log(tags)
     return(
     <>  
         <li>

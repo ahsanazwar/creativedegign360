@@ -19,41 +19,34 @@ function BlogsDetail(props) {
     // console.log(router);
 
     useEffect(() => {
-      getMorePost();
+     !myData.length? getBlgDetail() : '';
+    }, [myData]);
   
-    });
-  
-    const getMorePost = () => {
-      console.log(blogsId);
+    const getBlgDetail = () => {
       props.actions
               .blogsDetailGet(blogsId)
               .then((todos) => {
-                  if (todos.data.length) {
-                      // console.log(JSON.stringify(todos.data.slice(0,1)));
-                      // setData(todos.data);
-  
+                  if (!todos.failed && !todos.pending) {
+                      console.log("Det"+JSON.stringify(todos.data))
                       const newPosts = todos.data;
                       setData(newPosts);
                   }
-                  console.log(myData);
               });
       
     };
-
+  
   return (
     <div className="page-wrapper">
       <Meta
-        pageTitle = {`Blogs ${blogsId}`}
+        pageTitle = {`Blogs ${blogsId?blogsId:''}`}
       />
 
 
       <Header {...props}/>
 
         <main>
-            <MainBanner/>
-            <div>
-                {blogsId}
-            </div>
+            <MainBanner bannerTitle = {myData.length?myData[0].heading : ''} imgUrl={myData.length?myData[0].image : ''} content = "" btnProposal={true}/>
+            {<div dangerouslySetInnerHTML={ {__html: myData.length?myData[0].content:''} } />}
         </main>
       
       <Footer/>

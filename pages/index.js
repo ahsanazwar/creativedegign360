@@ -15,7 +15,10 @@ import ClientVideoSection from '@components/client-video-section';
 import OurCertificateSection from '@components/our-certificates';
 import BusinessContact from '@components/business-contact';
 import MarketingSection from '@components/marketing-section';
-import RatingSection from '@components/rating-section';
+import WhoWeAre from '@components/who-we-are';
+import BuildSection from '@components/build-section';
+import PackagesSection from '@components/packages-section';
+import ServicesSection from '@components/services-section';
 
 
 export default function Home(props) {
@@ -32,31 +35,17 @@ export default function Home(props) {
 
         <main>
             <MainBanner bannerTitle = "RESULTS" innerTitlle = "DRIVEN" content = "DIGITAL MARKETING AGENCY."/>
-            <RatingSection/>
-            <SectionHeading
-              heading="Our Clients"
-              headingInner="Get Results"
-            />
-            <ClientVideoSection/>
-            <ClientTestimonialSection/>
-            <SectionHeading
-              heading="Why Choose Thrive For Your"
-              headingInner="Digital Marketing Agency?"
-            />
-            <WhyChooseSection/>
             <AwardWinningSection/>
+            <WhoWeAre/>
+            <ServicesSection/>
+            <BuildSection/>
+            <WhyChooseSection/>
             <OurCertificateSection/>
-            <GrowthSection/>
-            <SectionHeading
-              heading="Our"
-              headingInner="Digital Marketing Expertise"
-            />
-            <MarketingSection/>
             <BusinessContact/>
-
+            <PackagesSection/>
         </main>
       
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

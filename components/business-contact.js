@@ -12,9 +12,9 @@ export default function BusinessContact(props) {
                         <h3 className="text-center">READY TO <span>GROW YOUR BUSINESS?</span></h3>
                         <p className="text-center">Contact us to work with a results-driven digital marketing agency</p>
                         <div className="btn-box-wrap">
-                            <Link href=""><a className="btn-lg btn btn-secondary">GET FREE PROPOSAL</a></Link>
+                            <Link href=""><a className="btn-lg btn btn-warning">GET FREE PROPOSAL</a></Link>
                             <p>OR</p>
-                            <Link href=""><a className="btn-lg btn btn-secondary bg-transparent">CALL 866.908.4748</a></Link>
+                            <Link href=""><a className="btn-lg btn btn-secondary bg-transparent">Call  +1 609-526-8045</a></Link>
                         </div>
                     </Col>
                 </Row>

@@ -11,9 +11,9 @@ export default function AwardWinningSection() {
                 <Row>
                     <Col xl={12}>
                         <div className="text-center">
-                            <h3>Award-winning digital <span>marketing agency</span></h3>
-                            <p>Thrive is a WordPress web design and SEO company with proven results.</p>
-                            <span><Link href=""><a className="read-more-btn">Read More +</a></Link></span>
+                            <h3>Join our 30,000+ happy customers</h3>
+                            {/* <p>Thrive is a WordPress web design and SEO company with proven results.</p>
+                            <span><Link href=""><a className="read-more-btn">Read More +</a></Link></span> */}
                             <div className="img-wrap">
                                 <Image src='/awardimage2020.jpg' alt='logo' width={1110} height={147}/>
                             </div>

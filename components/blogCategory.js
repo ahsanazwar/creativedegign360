@@ -14,19 +14,15 @@ function BlogCategory(props) {
     const [toggle, setToggle] = useState(false);
 
     useEffect(() => {
-    getCategories();
-
-    });
+        getCategories();
+    },[myCategoryData]);
 
     const getCategories = () => {
     props.actions
             .blogsCategoryGet()
-            .then((todos) => {
+            .then(async (todos) => {
                 if (todos.data.length) {
-                    // console.log(JSON.stringify(todos.data.slice(0,1)));
-                    // setData(todos.data);
-
-                    const newPosts = todos.data;
+                    const newPosts = await todos.data;
                     setCategoryData(newPosts);
                 }
             });
@@ -100,7 +96,7 @@ function BlogCategory(props) {
                                             {
                                                 myCategoryData.map((category) => {
                                                     return(
-                                                        <li key={category.id}><Link href={`/blogs/categories/${category.slug}`}><a className="">{category.title}</a></Link></li>
+                                                        <li key={category.id}><Link href={`/blogs/categories/${encodeURIComponent(category.slug)}`}><a className="">{category.title}</a></Link></li>
                                                     )
                                                 })
                                              }

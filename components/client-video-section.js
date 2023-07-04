@@ -15,7 +15,7 @@ export default function ClientVideoSection(props) {
         <section className="client-video-section">
             <Container>
                 <Row>
-                    <Col xl={6}>
+                    <Col xl={6} lg={6}>
                         <div className="client-video-box">
                             <Link href="">
                                 <a>
@@ -59,7 +59,7 @@ export default function ClientVideoSection(props) {
                             </div>
                         </div>
                     </Col>
-                    <Col xl={6}>
+                    <Col xl={6} lg={6}>
                     <div className="client-video-box">
                             <Link href="">
                                 <a>

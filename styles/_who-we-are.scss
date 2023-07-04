@@ -1,0 +1,13 @@
+.who-we-are{
+    background-image: url(../public/section-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: em(240) 0 em(80);
+    h2{
+        margin-bottom: em(5);
+    }
+    .warning-text{
+        margin: 0;
+    }
+}

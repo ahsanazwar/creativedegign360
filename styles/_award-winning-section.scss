@@ -1,9 +1,16 @@
 .award-winning-section{
     padding: em(65);
-    border-top: 1px solid $black;
-    border-bottom: 1px solid $black;
+    margin: em(-200) 0 em(-200);
+    position: relative;
+    z-index: 9;
+    .container{
+        background: $white;
+        box-shadow: 0px 0px 30px -23px #000;
+        padding: em(30) 0 em(25);
+        @include borderRadius(25px);
+    }
     h3{
-        font-weight: 500;
+        font-weight: 700;
         margin-bottom: em(8);
         span{
             font-weight: 700;

@@ -12,7 +12,7 @@ export default function ClientTestimonialSection() {
                             <h3>What Our <span>Clients Are Saying</span></h3>
                         </div>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <div className="testimonial-card">
                             <div className="testimonial-client-img marci-review"></div>
                             <p><span className="client-name">Marci Wiersma</span></p>
@@ -25,7 +25,7 @@ export default function ClientTestimonialSection() {
                             </p>
                         </div>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <div className="testimonial-card">
                             <div className="testimonial-client-img whitney-review"></div>
                             <p><span className="client-name">Whitney Wells Lewis</span></p>
@@ -38,7 +38,7 @@ export default function ClientTestimonialSection() {
                             </p>
                         </div>
                     </Col>
-                    <Col xl={4}>
+                    <Col xl={4} lg={4}>
                         <div className="testimonial-card">
                             <div className="testimonial-client-img chad-review"></div>
                             <p><span className="client-name">Chad Montgomery</span></p>
